@@ -1,98 +1,62 @@
-body {
-  margin: 0px;
-  overflow: hidden;
-  background-color: rgba(82, 224, 247, 0.5);
+@charset "utf-8";
+/* CSS Document */
+
+/******* Fonts Face CSS Start **********/
+@import url('https://fonts.googleapis.com/css?family=Varela');
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* 						{ margin: 0px; padding: 0px;}
+body 					{ font-family: 'Varela', sans-serif; font-size:14px; color: #fff;}
+.clear 					{ clear:both;}
+img 					{ border: 0px;}
+ul,ol 					{ list-style: none;}
+a 						{ text-decoration: none; outline: none;}
+a:focus, a:active, a:visited, a:HOVER	{ text-decoration: none; outline: none; }
+a:HOVER					{ }
+h1,h2,h3 				{ font-family: 'Varela', sans-serif; color: #fff; }
+h1 						{ margin: 35px 0px 20px; font-size: 48px; line-height: 48px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;}
+h2 						{ font-size: 19px; line-height: 26px; text-transform: capitalize;}
+h3 						{ }
+h4 						{ }
+h5 						{ }
+h6 						{ }
+p 						{ }
+button 					{ }
+img 					{ max-width: 100%; }
+/******* Common Element CSS End *********/
+/* -------- title style ------- */
+/* -------- Button style ------- */
+
+/******* Middle section CSS Start ******/
+.main-section 					{ height: 100vh; background: url("../images/pattern.png"); }
+.main-section .desc-block 		{ margin: 5% 10%; padding: 5% 10%; background: #3d1ba8; box-shadow: 0px 0px 5px #361b8a; }
+.theme-btn 						{ margin: 35px 0px; display: inline-block; padding: 10px 25px; color: #42269A; background: #fff; font-size: 20px; line-height: 24px; text-transform: uppercase; border-radius: 2em; }
+.theme-btn:hover 				{ box-shadow: 0px 0px 5px 5px #361b8a; }
+/******** Middle section CSS End *******/
+
+/***** Bottom section CSS Start *******/
+
+/* -------- conatct section ------- */
+/****** Bottom section CSS End *******/
+
+/***** responsive css Start ******/
+@media (max-width: 1199px) {
+
+}	
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media (max-width: 991px) {
+	
 }
 
-.wave_top, .grad_wave, .wave {
-  position: absolute;
-  width: 100%;
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	
 }
 
-.button {
-  position: absolute;
-}
-
-.top_wave_container, .bottom_wave_container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-}
-
-.bottom_wave_container {
-  transform: rotate(180deg);
-}
-
-.top_wave_container svg, .bottom_wave_container svg {
-  position: absolute;
-  transform: scaleY(0.4);
-  transform-origin: right top;
-}
-
-.brainchild {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.brainchild .logo_container {
-  width: 30%;
-  max-width: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#Cloud_Child, #Stars, #Circles {
-  animation: 1s fade linear;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#Cloud, #Circle_Group {
-  animation: float 2s infinite linear;
-}
-
-@keyframes float {
-  0%, 100% {
-    fill-opacity: 0.7;
-    transform: translateY(5px);
-  }
-  50% {
-    fill-opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#Star_1, #Star_2, #Star_3 {
-  animation: scale 2s infinite linear;
-  transform-origin: center center;
-}
-
-#Star_2 {
-  animation-delay: 0.2s;
-}
-
-#Star_3 {
-  animation-delay: 0.5s;
-}
-
-@keyframes scale {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.2);
-  }
+@media (max-width: 767px) {
+	
 }
